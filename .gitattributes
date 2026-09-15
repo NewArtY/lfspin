@@ -1,0 +1,6 @@
+# Store every file byte for byte: no end-of-line conversion on commit or checkout.
+# The sources use LF, while results/*.json and results/*.log were written on
+# Windows (CRLF, the logs with a UTF-8 BOM). Converting either would change the
+# SHA-256 digests in MANIFEST.sha256, so `reproduce_all.py --verify` would fail
+# on a fresh clone or on a `git archive` of the release.
+* -text

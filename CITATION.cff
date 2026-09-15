@@ -1,0 +1,68 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite both the Zenodo deposit and the associated Letter."
+title: "lfspin: light-front spin dynamics, exact benchmarks and physics-informed neural network solver"
+abstract: >-
+  Code and data for the Letter "Rapidity-Coupled Spin Dynamics in Pulsed Laser
+  Fields from Physics-Informed Neural Networks". For an electron in a linearly
+  polarized plane-wave laser pulse the rest-frame polarization angle follows the
+  instantaneous vector potential exactly, so the net spin rotation vanishes for
+  every carrier-envelope phase. The package verifies this closed form against a
+  light-front DOP853 reference, scans the carrier-envelope phase, benchmarks
+  lab-time RK4, Boris-BMT, Higuera-Cary-BMT and light-front RK4 integrators, and
+  trains a physics-informed neural network on the light-front orbital and BMT
+  equations, including an elliptically polarized pulse where no closed form
+  exists. It contains the computed results, the trained networks and the figures.
+type: software
+version: "1.0.0"
+date-released: "2026-09-16"
+# Fill in after the DOI has been reserved on Zenodo:
+# doi: "10.5281/zenodo.XXXXXXXX"
+repository-code: "https://github.com/NewArtY/lfspin"
+license: MIT
+keywords:
+  - spin dynamics
+  - Bargmann-Michel-Telegdi equation
+  - carrier-envelope phase
+  - few-cycle laser pulses
+  - light-front dynamics
+  - Volkov solution
+  - physics-informed neural networks
+  - particle pushers
+  - electron polarization
+  - strong-field physics
+authors:
+  - family-names: Akintsov
+    given-names: N. S.
+    orcid: "https://orcid.org/0000-0002-1040-1292"
+    affiliation: "School of Artificial Intelligence and Computer Science, Nantong University, Nantong 226019, China"
+  - family-names: Nevecheria
+    given-names: A. P.
+    orcid: "https://orcid.org/0000-0001-6736-4691"
+    affiliation: "Department of Mathematical and Computer Methods, Kuban State University, Krasnodar 350040, Russia"
+  - family-names: Andreev
+    given-names: S. N.
+    orcid: "https://orcid.org/0000-0003-3588-2894"
+    affiliation: 'Joint-Stock Company "Center for Research and Development", Moscow 101000, Russia'
+  - family-names: Qin
+    given-names: Qing-Hua
+    orcid: "https://orcid.org/0000-0003-0948-784X"
+    affiliation: "Institute of Advanced Interdisciplinary Technology, Shenzhen MSU-BIT University, Shenzhen 518172, China"
+preferred-citation:
+  type: article
+  title: "Rapidity-Coupled Spin Dynamics in Pulsed Laser Fields from Physics-Informed Neural Networks"
+  journal: "Physical Review A"
+  year: 2026
+  notes: "Submitted."
+  authors:
+    - family-names: Akintsov
+      given-names: N. S.
+      orcid: "https://orcid.org/0000-0002-1040-1292"
+    - family-names: Nevecheria
+      given-names: A. P.
+      orcid: "https://orcid.org/0000-0001-6736-4691"
+    - family-names: Andreev
+      given-names: S. N.
+      orcid: "https://orcid.org/0000-0003-3588-2894"
+    - family-names: Qin
+      given-names: Qing-Hua
+      orcid: "https://orcid.org/0000-0003-0948-784X"
