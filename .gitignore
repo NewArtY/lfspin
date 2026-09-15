@@ -1,0 +1,61 @@
+# ---------------------------------------------------------------------------
+# lfspin
+#
+# NB: results/ (*.json, *.log, *_model.pt) and figs/ (*.pdf, *.png) are the
+# published data of the Letter and ARE tracked; do not add global *.log / *.pt
+# / *.png / *.pdf rules here.
+# ---------------------------------------------------------------------------
+
+# Resumable Adam checkpoints written by train_pinn.py (full optimizer state;
+# not deleted after training, not needed for --skip-training)
+*.ckpt
+*.ckpt.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Local secrets / environment
+.env
+.env.*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code (per-user local settings only)
+.claude/settings.local.json
+
+# OS
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+~$*

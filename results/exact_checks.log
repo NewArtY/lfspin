@@ -1,0 +1,11 @@
+﻿closed form: max|dS| = 8.345546476107302e-13  max|dSigma| = 4.2643666375852263e-13
+N=2: max net rotation over 16 CEPs = 3.24e-13 deg
+N=8: max net rotation over 16 CEPs = 8.81e-13 deg
+tau cross-check: 5.244413197653798e-13 deg; |gamma-1| = 2.19824158875781e-14
+circular N=2 phi=0.0: |Theta|=2.7947e-07 rad, a_e^2|A|/2=2.7947e-07
+circular N=2 phi=0.7: |Theta|=2.7947e-07 rad, a_e^2|A|/2=2.7947e-07
+circular N=2 phi=2.0: |Theta|=2.7947e-07 rad, a_e^2|A|/2=2.7947e-07
+circular N=8 phi=0.0: |Theta|=1.1179e-06 rad, a_e^2|A|/2=1.1179e-06
+circular N=8 phi=0.7: |Theta|=1.1179e-06 rad, a_e^2|A|/2=1.1179e-06
+circular N=8 phi=2.0: |Theta|=1.1179e-06 rad, a_e^2|A|/2=1.1179e-06
+saved results/exact_checks.json

@@ -1,0 +1,16 @@
+﻿step      0 loss 3.6703e+01 orb 6.589e-02 spin 1.230e-02 inv 1.825e+00 best 3.6703e+01 t=0s
+step   2000 loss 2.7683e-03 orb 4.728e-04 spin 5.423e-04 inv 1.739e-05 best 2.7683e-03 t=98s
+step   4000 loss 1.0815e-03 orb 1.284e-04 spin 4.547e-05 inv 2.276e-05 best 9.9728e-04 t=128s
+step   6000 loss 1.2848e-03 orb 1.038e-04 spin 3.716e-05 inv 3.496e-05 best 7.6375e-04 t=175s
+step   8000 loss 8.5655e-04 orb 1.034e-04 spin 1.853e-05 inv 1.161e-05 best 6.0002e-04 t=299s
+step  10000 loss 7.4963e-04 orb 8.616e-05 spin 8.941e-06 inv 9.155e-06 best 5.9232e-04 t=419s
+step  12000 loss 6.8909e-04 orb 7.408e-05 spin 5.450e-06 inv 7.818e-06 best 5.7052e-04 t=540s
+step  14000 loss 7.5111e-04 orb 7.464e-05 spin 3.766e-06 inv 8.402e-06 best 5.7052e-04 t=659s
+step  16000 loss 7.0317e-04 orb 6.402e-05 spin 2.718e-06 inv 9.142e-06 best 5.7052e-04 t=761s
+step  18000 loss 7.3421e-04 orb 6.895e-05 spin 1.583e-06 inv 8.894e-06 best 5.7052e-04 t=827s
+step  20000 loss 7.8517e-04 orb 7.359e-05 spin 1.544e-06 inv 9.591e-06 best 5.7052e-04 t=942s
+step  22000 loss 7.9278e-04 orb 7.837e-05 spin 1.333e-06 inv 8.093e-06 best 5.6103e-04 t=968s
+step  23999 loss 6.4801e-04 orb 6.397e-05 spin 1.181e-06 inv 6.635e-06 best 5.3622e-04 t=1047s
+after Adam: {'max_err_gamma_vs_ref': 0.05586257421770058, 'max_err_S_vs_ref': 0.002235154288466823, 'max_err_S_per_component_vs_ref': [0.0011965134766229503, 0.002235154288466823, 0.0006044405514698271, 0.001023984902346009], 'max_err_S_vs_exact': 0.002235154288472929}
+final: {'max_err_gamma_vs_ref': 0.05586257421770058, 'max_err_S_vs_ref': 0.002235154288466823, 'max_err_S_per_component_vs_ref': [0.0011965134766229503, 0.002235154288466823, 0.0006044405514698271, 0.001023984902346009], 'max_err_S_vs_exact': 0.002235154288472929, 'ref_vs_exact_max': 4.202610481840452e-13, 'max_abs_uu_minus_1': 0.01289984182626347, 'rms_uu_minus_1': 0.00366680891345617, 'max_abs_SS_plus_1': 0.0010976075335413782, 'rms_SS_plus_1': 0.0005040751103553998, 'grid1200_orb_mse': 9.31329198091182e-05, 'grid1200_spin_mse': 1.3377089782760305e-06, 'grid1200_inv_mse': 6.847545578819493e-06, 'grid1200_total_final_weights': 0.0008860273969841635}
+Adam 1048 s, L-BFGS 0 s

@@ -1,0 +1,175 @@
+{
+ "closed_form_vs_DOP853": [
+  {
+   "a_e": 0.00115965218,
+   "N": 2,
+   "phi": 0.0,
+   "max_abs_dS": 3.5704772471945034e-13,
+   "max_abs_dSigma_rad": 9.96425164601078e-14
+  },
+  {
+   "a_e": 0.00115965218,
+   "N": 2,
+   "phi": 1.5707963267948966,
+   "max_abs_dS": 4.652944696204031e-13,
+   "max_abs_dSigma_rad": 1.0996759058912176e-13
+  },
+  {
+   "a_e": 0.00115965218,
+   "N": 2,
+   "phi": 0.7,
+   "max_abs_dS": 4.199973702156967e-13,
+   "max_abs_dSigma_rad": 1.1868284133242923e-13
+  },
+  {
+   "a_e": 0.00115965218,
+   "N": 8,
+   "phi": 0.7,
+   "max_abs_dS": 4.782840790085174e-13,
+   "max_abs_dSigma_rad": 8.942846463355636e-14
+  },
+  {
+   "a_e": 0.00115965218,
+   "N": 8,
+   "phi": 2.0,
+   "max_abs_dS": 4.085620730620576e-13,
+   "max_abs_dSigma_rad": 8.920642002863133e-14
+  },
+  {
+   "a_e": 0.05,
+   "N": 2,
+   "phi": 0.0,
+   "max_abs_dS": 5.053735208093713e-13,
+   "max_abs_dSigma_rad": 1.1629586182948515e-13
+  },
+  {
+   "a_e": 0.05,
+   "N": 2,
+   "phi": 1.5707963267948966,
+   "max_abs_dS": 3.443217932996845e-13,
+   "max_abs_dSigma_rad": 9.320322291728189e-14
+  },
+  {
+   "a_e": 0.05,
+   "N": 2,
+   "phi": 0.7,
+   "max_abs_dS": 3.9641900873021996e-13,
+   "max_abs_dSigma_rad": 1.1229905894083458e-13
+  },
+  {
+   "a_e": 0.05,
+   "N": 8,
+   "phi": 0.7,
+   "max_abs_dS": 4.4363124285240474e-13,
+   "max_abs_dSigma_rad": 1.0602629885170245e-13
+  },
+  {
+   "a_e": 0.05,
+   "N": 8,
+   "phi": 2.0,
+   "max_abs_dS": 3.5703384693164253e-13,
+   "max_abs_dSigma_rad": 9.475753515175711e-14
+  },
+  {
+   "a_e": 0.3,
+   "N": 2,
+   "phi": 0.0,
+   "max_abs_dS": 5.836442440454448e-13,
+   "max_abs_dSigma_rad": 1.841304886340822e-13
+  },
+  {
+   "a_e": 0.3,
+   "N": 2,
+   "phi": 1.5707963267948966,
+   "max_abs_dS": 4.1533443351227106e-13,
+   "max_abs_dSigma_rad": 2.0314305793078802e-13
+  },
+  {
+   "a_e": 0.3,
+   "N": 2,
+   "phi": 0.7,
+   "max_abs_dS": 8.345546476107302e-13,
+   "max_abs_dSigma_rad": 3.362865541589599e-13
+  },
+  {
+   "a_e": 0.3,
+   "N": 8,
+   "phi": 0.7,
+   "max_abs_dS": 5.909162048567396e-13,
+   "max_abs_dSigma_rad": 4.249933738265099e-13
+  },
+  {
+   "a_e": 0.3,
+   "N": 8,
+   "phi": 2.0,
+   "max_abs_dS": 6.374900607397649e-13,
+   "max_abs_dSigma_rad": 4.2643666375852263e-13
+  }
+ ],
+ "closed_form_max_dS_overall": 8.345546476107302e-13,
+ "closed_form_max_dSigma_overall": 4.2643666375852263e-13,
+ "Sigma_peak_deg": 23.747464375655156,
+ "Sigma_peak_g2_deg": 23.719558241895957,
+ "anomalous_part_at_peak_deg": 0.02790613375920101,
+ "net_rotation_max_deg_N2": 3.2439949445192467e-13,
+ "net_rotation_max_deg_N8": 8.805702637763967e-13,
+ "tau_crosscheck_net_rotation_max_deg_N2": 5.244413197653798e-13,
+ "tau_crosscheck_gamma_minus_1_max_N2": 2.19824158875781e-14,
+ "max_abs_gamma_minus_1_minus_a2_over_2": 1.6640639875168534e-16,
+ "circular_holonomy": [
+  {
+   "N": 2,
+   "phi": 0.0,
+   "signed_area": 0.4156327080699295,
+   "net_rotation_rad": -2.794700088018114e-07,
+   "half_ae2_area_rad": 2.7947001530332764e-07,
+   "ratio": 0.9999999767362656,
+   "longitudinal_spin_final_angle_deg": 9.189510640811771e-10
+  },
+  {
+   "N": 2,
+   "phi": 0.7,
+   "signed_area": 0.4156327080699295,
+   "net_rotation_rad": -2.7947000890976487e-07,
+   "half_ae2_area_rad": 2.7947001530332764e-07,
+   "ratio": 0.9999999771225447,
+   "longitudinal_spin_final_angle_deg": 9.189381950600762e-10
+  },
+  {
+   "N": 2,
+   "phi": 2.0,
+   "signed_area": 0.4156327080699295,
+   "net_rotation_rad": -2.7947000889931444e-07,
+   "half_ae2_area_rad": 2.7947001530332764e-07,
+   "ratio": 0.999999977085151,
+   "longitudinal_spin_final_angle_deg": 9.189900435610958e-10
+  },
+  {
+   "N": 8,
+   "phi": 0.0,
+   "signed_area": 1.662530832279718,
+   "net_rotation_rad": -1.1178800354305994e-06,
+   "half_ae2_area_rad": 1.1178800612133105e-06,
+   "ratio": 0.9999999769360667,
+   "longitudinal_spin_final_angle_deg": 2.6006450559698834e-13
+  },
+  {
+   "N": 8,
+   "phi": 0.7,
+   "signed_area": 1.662530832279718,
+   "net_rotation_rad": -1.1178800350499964e-06,
+   "half_ae2_area_rad": 1.1178800612133105e-06,
+   "ratio": 0.9999999765955981,
+   "longitudinal_spin_final_angle_deg": 2.6144344618140503e-13
+  },
+  {
+   "N": 8,
+   "phi": 2.0,
+   "signed_area": 1.662530832279718,
+   "net_rotation_rad": -1.117880035047259e-06,
+   "half_ae2_area_rad": 1.1178800612133105e-06,
+   "ratio": 0.9999999765931494,
+   "longitudinal_spin_final_angle_deg": 9.653286338013014e-14
+  }
+ ]
+}
