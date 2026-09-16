@@ -97,6 +97,6 @@ for N in (2, 8):
 out["circular_holonomy"] = circ
 
 os.makedirs(os.path.join(HERE, "results"), exist_ok=True)
-with open(os.path.join(HERE, "results", "exact_checks.json"), "w") as f:
+with open(os.path.join(HERE, "results", "exact_checks.json"), "w", newline="\n") as f:
     json.dump(out, f, indent=1)
 print("saved results/exact_checks.json")

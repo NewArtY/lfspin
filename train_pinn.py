@@ -108,7 +108,7 @@ def main():
                cpu=platform.processor(), after_adam=ev_adam, final=ev,
                versions=dict(python=platform.python_version(), numpy=np.__version__,
                              scipy=scipy.__version__, torch=torch.__version__))
-    with open(os.path.join(RES, f"pinn_{args.config}.json"), "w") as f:
+    with open(os.path.join(RES, f"pinn_{args.config}.json"), "w", newline="\n") as f:
         json.dump(out, f, indent=1)
     print("final:", {k: v for k, v in ev.items() if k not in ("eta", "gamma_pinn", "u_pinn", "S_pinn")})
     print(f"Adam {t_adam:.0f} s, L-BFGS {t_lbfgs:.0f} s")

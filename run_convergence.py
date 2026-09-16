@@ -59,7 +59,7 @@ def main():
                error_metric="max(|dgamma|/gamma_ref, max_mu|dS^mu|/max_mu|S_ref^mu|) at the end of the pulse",
                **res)
     os.makedirs(os.path.join(HERE, "results"), exist_ok=True)
-    with open(os.path.join(HERE, "results", "convergence.json"), "w") as f:
+    with open(os.path.join(HERE, "results", "convergence.json"), "w", newline="\n") as f:
         json.dump(out, f, indent=1)
     print("t1 =", t1, " saved results/convergence.json")
 

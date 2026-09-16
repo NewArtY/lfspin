@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "lfspin: light-front spin dynamics, exact benchmarks and physics-informed neural network solver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "language": "eng",
   "access_right": "open",
   "license": "MIT",
@@ -42,7 +42,7 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/NewArtY/lfspin/tree/v1.0.0",
+      "identifier": "https://github.com/NewArtY/lfspin/tree/v1.0.1",
       "relation": "isSupplementTo",
       "resource_type": "software"
     },

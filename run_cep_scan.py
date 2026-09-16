@@ -68,6 +68,6 @@ S2, S8 = out["scan"]["N2"]["summary"], out["scan"]["N8"]["summary"]
 out["suppression_factor"] = S2["sigma_spread_deg"] / S8["sigma_spread_deg"]
 out["suppression_factor_theta"] = S2["theta_spread_deg"] / S8["theta_spread_deg"]
 print("suppression factor (Sigma):", out["suppression_factor"])
-with open(os.path.join(HERE, "results", "cep_scan.json"), "w") as f:
+with open(os.path.join(HERE, "results", "cep_scan.json"), "w", newline="\n") as f:
     json.dump(out, f, indent=1)
 print("saved results/cep_scan.json")

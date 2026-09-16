@@ -13,10 +13,12 @@ abstract: >-
   equations, including an elliptically polarized pulse where no closed form
   exists. It contains the computed results, the trained networks and the figures.
 type: software
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-09-16"
-# Fill in after the DOI has been reserved on Zenodo:
-# doi: "10.5281/zenodo.XXXXXXXX"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22779264"
+    description: "Concept DOI: always resolves to the latest release"
 repository-code: "https://github.com/NewArtY/lfspin"
 license: MIT
 keywords:

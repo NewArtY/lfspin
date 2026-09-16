@@ -6,7 +6,7 @@ Code and data for the Letter
 > *Rapidity-Coupled Spin Dynamics in Pulsed Laser Fields from Physics-Informed Neural Networks*
 > (submitted to Physical Review A).
 
-**Release 1.0.0** · Zenodo version DOI: `10.5281/zenodo.XXXXXXXX` ·
+**Release 1.0.1** · Zenodo concept DOI: `10.5281/zenodo.22779264` (always the latest release) ·
 Repository: <https://github.com/NewArtY/lfspin> ·
 Release history: [`CHANGELOG.md`](CHANGELOG.md)
 
@@ -96,6 +96,11 @@ python reproduce_all.py --verify     # check every deposited file against MANIFE
 python reproduce_all.py --manifest   # rewrite the manifest after an intentional change
 ```
 
+All deposited text files, including `results/*.json` and `results/*.log`, use LF
+line endings, and `.gitattributes` disables end-of-line conversion, so a clone,
+a `git archive` and the Zenodo download are byte-identical to the manifest on
+every platform.
+
 `--verify` names every file that is changed, missing or unexpected and exits
 nonzero if there is any. It leaves out what the package writes on the fly
 (`__pycache__/`, `*.ckpt`) and what belongs to whoever runs it (a virtual
@@ -132,10 +137,10 @@ Please cite the Letter and this deposit:
 
 > N. S. Akintsov, A. P. Nevecheria, S. N. Andreev, Q.-H. Qin,
 > *lfspin: light-front spin dynamics, exact benchmarks and physics-informed
-> neural network solver*, version 1.0.0, Zenodo (2026),
-> doi:10.5281/zenodo.XXXXXXXX.
+> neural network solver*, version 1.0.1, Zenodo (2026),
+> doi:10.5281/zenodo.22779264.
 
-This is the version DOI of release 1.0.0: it points to exactly the code and
-data that produced the numbers of the Letter. Zenodo also assigns a concept
-DOI, shown on the record page, which always resolves to the latest release.
-Machine-readable metadata are in `CITATION.cff`.
+That is the concept DOI: it always resolves to the latest release. Each release
+also has its own version DOI, shown on the Zenodo record page; the Letter cites
+the version DOI of the release that produced its numbers. Machine-readable
+metadata are in `CITATION.cff`.
