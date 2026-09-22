@@ -1,0 +1,43 @@
+{
+ "main": {
+  "max_abs_S_dot_u": 2.17027727715957e-05,
+  "rms_S_dot_u": 7.850189168184012e-06,
+  "reference_max_abs_S_dot_u": 4.038575029952085e-13,
+  "recomputed_max_err_gamma": 0.00047310680253853654,
+  "stored_max_err_gamma": 0.00047310680253853654,
+  "recomputed_max_err_S": 3.898623598959372e-05,
+  "stored_max_err_S": 3.898623598959372e-05,
+  "reconstruction_ok": true
+ },
+ "ablation": {
+  "max_abs_S_dot_u": 0.0005408339166083909,
+  "rms_S_dot_u": 0.0003252213989295889,
+  "reference_max_abs_S_dot_u": 4.038575029952085e-13,
+  "recomputed_max_err_gamma": 0.0008110579698434872,
+  "stored_max_err_gamma": 0.0008110579698434872,
+  "recomputed_max_err_S": 0.00039372721023905877,
+  "stored_max_err_S": 0.00039372721023905877,
+  "reconstruction_ok": true
+ },
+ "baseline": {
+  "max_abs_S_dot_u": 0.03394146555985046,
+  "rms_S_dot_u": 0.025483335853535724,
+  "reference_max_abs_S_dot_u": 4.038575029952085e-13,
+  "recomputed_max_err_gamma": 0.05586257421770058,
+  "stored_max_err_gamma": 0.05586257421770058,
+  "recomputed_max_err_S": 0.002235154288466823,
+  "stored_max_err_S": 0.002235154288466823,
+  "reconstruction_ok": true
+ },
+ "elliptical": {
+  "max_abs_S_dot_u": 1.3185388965443977e-05,
+  "rms_S_dot_u": 3.0999574499319324e-06,
+  "reference_max_abs_S_dot_u": 5.563188798518581e-13,
+  "recomputed_max_err_gamma": 9.371591455553663e-05,
+  "stored_max_err_gamma": 9.371591455553663e-05,
+  "recomputed_max_err_S": 1.8875729324661222e-05,
+  "stored_max_err_S": 1.8875729324661222e-05,
+  "reconstruction_ok": true
+ },
+ "note": "S.u is never imposed: the loss penalizes only u.u - 1 and S.S + 1. Values are maxima over a 2000-point grid across the pulse."
+}

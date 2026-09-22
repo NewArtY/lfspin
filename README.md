@@ -1,18 +1,18 @@
 # lfspin — light-front spin dynamics, exact benchmarks and a PINN solver
 
-Code and data for the Letter
+Code and data for the article
 
 > N. S. Akintsov, A. P. Nevecheria, S. N. Andreev, Q.-H. Qin,
-> *Rapidity-Coupled Spin Dynamics in Pulsed Laser Fields from Physics-Informed Neural Networks*
+> *Rapidity-Coupled Spin Dynamics in Pulsed Laser Fields: Exact Light-Front Solutions, Numerical Benchmarks, and Physics-Informed Neural Networks*
 > (submitted to Physical Review A).
 
-**Release 1.0.1** · Zenodo concept DOI: `10.5281/zenodo.22779264` (always the latest release) ·
+**Release 1.1.0** · Zenodo concept DOI: `10.5281/zenodo.22779264` (always the latest release) ·
 Repository: <https://github.com/NewArtY/lfspin> ·
 Release history: [`CHANGELOG.md`](CHANGELOG.md)
 
 The package is self-contained. It needs only the Python packages listed in
 `requirements.txt`, and a single command regenerates every number, table and
-figure of the Letter and its Supplemental Material.
+figure of the article and its Supplemental Material.
 
 ## Physics in one paragraph
 
@@ -51,9 +51,14 @@ Fourier-feature input embedding.
 | `pinn.py` | Fourier-feature PINN, residual loss, Adam (with resumable checkpoints) and L-BFGS training |
 | `run_exact_checks.py` | Closed form vs DOP853, net-rotation CEP scan, proper-time cross-check, circular-polarization holonomy → `results/exact_checks.json` |
 | `run_cep_scan.py` | 49-point CEP scan of the rest-frame angle Σ^max and γ_max for N = 2, 8 (physical g and g = 2) → `results/cep_scan.json` |
+| `run_param_scan.py` | Map of the CEP sensitivity over amplitude and pulse length, from the closed form, validated against the reference → `results/param_scan.json` |
+| `run_ellipticity_scan.py` | Net post-pulse rotation from linear to circular polarization against the leading-order holonomy → `results/ellipticity_scan.json` |
 | `run_convergence.py` | Fixed-step-budget study, surfing electron γ0 = 10 → `results/convergence.json` |
 | `train_pinn.py` | Four configurations → `results/pinn_<config>.json`, `results/pinn_<config>_model.pt` (see below) |
-| `make_fig1.py`, `make_fig2.py`, `make_figS1.py` | Figures 1, 2 of the Letter and Fig. S1 → `figs/*.pdf`, `figs/*.png` |
+| `run_pinn_invariants.py` | `max \|S.u\|` of the trained networks, recomputed from the checkpoints (the loss never imposes it) → `results/pinn_invariants.json` |
+| `make_fig_param.py`, `make_fig_ellipticity.py` | Parametric map and ellipticity scan of the article |
+| `make_fig_conv.py`, `make_fig_pinn.py` | Convergence study and network results as separate figures of the article |
+| `make_fig1.py`, `make_fig2.py`, `make_figS1.py` | Fig. 1 (shared), and Fig. 2 and Fig. S1 of the Letter version → `figs/*.pdf`, `figs/*.png` |
 | `reproduce_all.py` | Runs everything in order; checks the deposit against `MANIFEST.sha256` |
 | `results/*.log` | Transcripts of the runs that produced the deposited JSON files |
 | `MANIFEST.sha256` | SHA-256 digest and size of every deposited file |

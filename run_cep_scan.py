@@ -18,7 +18,7 @@ A0 = 0.42
 U0 = (1.0, 0.0, 0.0, 0.0)
 SZ = (0.0, 0.0, 0.0, 1.0)
 N_PHI = 49          # uniformly spaced over [0, 2 pi] (end points equivalent)
-N_DENSE = 2500
+N_DENSE = 20000       # dense enough to resolve max|Sigma| for N = 8 (was 2500)
 
 
 def run(N, phi, a_e, n_dense=N_DENSE):
