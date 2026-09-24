@@ -4,6 +4,25 @@ All notable changes to this deposit. Versions follow the Zenodo releases: each
 release has its own version DOI, and the concept DOI shown on the Zenodo record
 always resolves to the latest one.
 
+## 1.1.1 — 2026-09-24
+
+Adds the arbitrary-precision check of the holonomy residual. No previously
+computed result changes; the new script only settles how one of them is to be
+interpreted.
+
+- `run_holonomy_highprec.py`: integrates the BMT equation along the exact Volkov
+  orbit with mpmath's Taylor-method solver at a controlled number of decimal
+  digits. The point is that in double precision the residual between the
+  computed net rotation and the leading-order holonomy is ~6e-15 rad, which is
+  the absolute tolerance of the reference integrator itself, and it drifts from
+  3.4e-8 to 2.1e-8 (relative) as the tolerances are tightened to the limit
+  double precision allows. At 20 to 40 digits the residual is stable at
+  -2.1621751711e-8 and scales as a_e^2 a0^2, identifying it as the O(a_e^4)
+  correction to the holonomy rather than round-off. The script also records the
+  double-precision drift, so both statements are reproducible.
+- `mpmath` added to `requirements.txt`; `reproduce_all.py` runs the new stage.
+- `MANIFEST.sha256` regenerated.
+
 ## 1.1.0 — 2026-09-23
 
 Adds the computations of the expanded article. The Letter-version results are

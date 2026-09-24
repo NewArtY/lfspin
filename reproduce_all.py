@@ -98,6 +98,7 @@ def main():
     run("run_cep_scan.py")
     run("run_param_scan.py")
     run("run_ellipticity_scan.py")
+    run("run_holonomy_highprec.py")
     run("run_convergence.py")
     for cfg in PINN_CONFIGS:
         if a.skip_training and os.path.exists(os.path.join(HERE, "results", f"pinn_{cfg}.json")):

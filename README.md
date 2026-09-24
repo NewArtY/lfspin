@@ -6,7 +6,7 @@ Code and data for the article
 > *Rapidity-Coupled Spin Dynamics in Pulsed Laser Fields: Exact Light-Front Solutions, Numerical Benchmarks, and Physics-Informed Neural Networks*
 > (submitted to Physical Review A).
 
-**Release 1.1.0** · Zenodo concept DOI: `10.5281/zenodo.22779264` (always the latest release) ·
+**Release 1.1.1** · Zenodo concept DOI: `10.5281/zenodo.22779264` (always the latest release) ·
 Repository: <https://github.com/NewArtY/lfspin> ·
 Release history: [`CHANGELOG.md`](CHANGELOG.md)
 
@@ -53,6 +53,7 @@ Fourier-feature input embedding.
 | `run_cep_scan.py` | 49-point CEP scan of the rest-frame angle Σ^max and γ_max for N = 2, 8 (physical g and g = 2) → `results/cep_scan.json` |
 | `run_param_scan.py` | Map of the CEP sensitivity over amplitude and pulse length, from the closed form, validated against the reference → `results/param_scan.json` |
 | `run_ellipticity_scan.py` | Net post-pulse rotation from linear to circular polarization against the leading-order holonomy → `results/ellipticity_scan.json` |
+| `run_holonomy_highprec.py` | Arbitrary-precision (mpmath) check of the net post-pulse rotation against the leading-order holonomy: precision convergence and scaling in a0 and in the anomaly → `results/holonomy_highprec.json` |
 | `run_convergence.py` | Fixed-step-budget study, surfing electron γ0 = 10 → `results/convergence.json` |
 | `train_pinn.py` | Four configurations → `results/pinn_<config>.json`, `results/pinn_<config>_model.pt` (see below) |
 | `run_pinn_invariants.py` | `max \|S.u\|` of the trained networks, recomputed from the checkpoints (the loss never imposes it) → `results/pinn_invariants.json` |
